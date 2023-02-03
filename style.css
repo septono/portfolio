@@ -1,0 +1,933 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*共通エリア*/
+
+body {
+/*    width: 100%;*/
+    color: #4d4d4d;
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+}
+
+main {
+/*    max-width: 1200px;*/
+    width: 100%;
+/*    margin: 0 auto;*/
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+/*    width: 100%;*/
+}
+
+
+.pc{ display: block; }
+.sp{ display: none; }
+
+
+
+
+.btn {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    font-weight: 600;
+    border-radius: 30px;
+    background: #163259;
+    opacity: 1;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.white {
+    background-color: #fff;
+    color: #aa8c78;
+}
+
+.beige {
+    background-color: #aa8c78;
+    color: #fff;
+}
+
+
+nav {
+    width: 340px;
+    background: #aa8c78;
+    padding: 50px 0 60px 50px;
+    position: fixed;
+    top: 0;
+    right: -340px;
+    z-index: 9998;
+    transition: .5s;
+	height: 1700px;
+}
+
+nav.active {
+    right: 0;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2.4;
+    border-bottom: dotted 1px;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    background: #aa8c78;
+    border-radius: 70px;
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    z-index: 10000;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-btn.active {
+        background: #aa8c78;
+}
+
+.menu-btn .inner {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.menu-btn .inner span {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: .5s;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.menu-btn .inner span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-btn .inner span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-btn .inner span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.menu-btn.active .inner span:nth-of-type(1) {
+    transform: translate(0,6px) rotate(45deg);
+}
+
+.menu-btn.active .inner span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-btn.active .inner span:nth-of-type(3) {
+    transform: translate(0,-13px) rotate(-45deg);
+}
+.menu-btn span.futura {
+    display: block;
+    font-size: 11px;
+    line-height: 1;
+    background: none;
+    top: 23px;
+    color: #fff;
+    left: -2px;
+    font-weight: bold;
+}
+
+
+
+
+
+/*headerエリア*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 20px;
+}
+
+.header-logo {
+    width: 50%;
+}
+
+.header-btn-box {
+    display: flex;
+    width: 30%;
+    margin-right: 3%;
+}
+
+
+.header-menu-btn {
+    border-radius: 50%;
+    background-color: #aa8c78;
+}
+
+
+
+/*TOP_MVエリア*/
+
+.top-mv {
+    position: relative;
+    height: 800px;
+}
+
+.top-mv img {
+    background: url("../img/top-mv.jpg");
+    width: 90%;
+    height: 900px;
+    border-radius: 0 0 0 15%;
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.mv-title-box {
+    transform: translateY(350px);
+}
+
+
+.top-mv .mv-title1 {
+    background-color: #ffff46;
+    font-size: 46px;
+    position: absolute;
+    z-index: 1;
+    padding: 15px 50px;
+    border-radius: 0 50px 50px 0;
+    color: #6ebebe;
+    font-weight: 700;
+}
+
+.top-mv .mv-title2 {
+    background-color: #ffff46;
+    font-size: 46px;
+    position: absolute;
+    z-index: 1;
+    top: 125px;
+    padding: 15px 50px;
+    border-radius: 0 50px 50px 0;
+    color: #6ebebe;
+    font-weight: 700; 
+}
+
+
+
+/*上部相談エリア*/
+
+.top-sodan {
+    padding-top: 600px;
+    background-color: #6ebebe;
+    padding: 250px 0 150px;
+}
+
+.top-sodan-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sodan-pic {
+    width: 40%;
+}
+ 
+.sodan-pic img {
+    width: 100%;
+    border-radius: 0 5% 5% 0;
+}
+
+.sodan-txt {
+    color: #fff;
+}
+
+.sodan-txt-box p span {
+    color: #ffff46;
+}
+
+
+.sodan-txt-box {
+    width: 60%;
+    padding: 0 150px 0 80px;
+}
+
+.sodan-txt-box p {
+    color: #fff;
+}
+
+.sodan-title {
+    font-size: 34px;
+    color: #ffff46;
+}
+
+.sodan-btn-box {
+    display: flex;
+}
+
+
+
+/*お悩みエリア*/
+
+.onayami {
+/*
+    display: flex;
+    justify-content: center;
+*/
+    background: url("../img/onayami-bg.png") center center / 100%;
+    background-repeat: no-repeat;
+/*    padding: 50px 100px;*/
+}
+
+.onayami-flex {
+    display: flex;
+    justify-content: space-evenly        ;
+    padding: 50px 100px;
+}
+
+
+/*
+.onayami::after {
+    background: url("../img/onayami-bg02.png");
+    content: '';
+    width: 100%;
+}
+*/
+
+.onayami-box {
+    width: 40%;
+}
+
+.onayami-pic {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    text-align: right;
+}
+
+.onayami-pic img {
+    width: 70%;
+}
+
+.onayami-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.onayami-list ul {
+    line-height: 2.5;
+}
+
+
+.onayami-list {
+    position: relative;
+    color: #aa8c78;
+}
+
+
+.onayami-list strong {
+    color: #4d4d4d;
+}
+
+.onayami-list li::before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background: url("../img/check.png") no-repeat;
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+}
+
+
+
+.onayami-list li {
+    margin-left: 30px;
+}
+
+
+/*４つの取り組み*/
+
+.four-action {
+    width: 90%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+
+/*
+.four-act-kaiketu {
+    font-size: 40px;
+    background-color: #6ebebe;
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 20px;
+    color: #ffff46;
+}
+*/
+
+
+
+.four-act-title {
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.four-act-title span {
+    font-size: 46px;
+    color: #6ebebe;
+}
+
+.four-act-title strong {
+    font-size: 80px;
+}
+
+ 
+.act-box {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #ffff46;
+    padding: 3em 3em 5em 3em;
+    position: relative;
+    margin-bottom: 10%;
+    border-radius: 35px;
+}
+
+
+
+.content-L {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.four-action .pre {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding: 0px;
+    margin-bottom: 95px;
+}
+
+
+.four-action .pre2 {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding: 0px;
+    margin-bottom: 95px;
+}
+
+.four-action .pre3 {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding: 0px;
+    margin-bottom: 95px;
+}
+
+.four-action .pre4 {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding: 0px;
+    margin-bottom: 95px;
+}
+
+
+.four-action .pre:before {
+    content: "";
+    width: calc(50vw);
+    height: 350px;
+    background-image: url(../img/act01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px 0 0 15px;
+}
+
+.four-action .pre2:before {
+    content: "";
+    width: calc(50vw);
+    height: 350px;
+    background-image: url("../img/act02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+    border-radius: 0 15px 15px 0;
+}
+
+.four-action .pre3:before {
+    content: "";
+    width: calc(50vw);
+    height: 350px;
+    background-image: url("../img/act03.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px 0 0 15px;
+}
+
+.four-action .pre4:before {
+    content: "";
+    width: calc(50vw);
+    height: 350px;
+    background-image: url("../img/act04.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+    border-radius: 0 15px 15px 0;
+}
+
+
+.four-action .pre .txt {
+    width: 90%;
+    background-color: #ffff46;
+    margin: 0 auto;
+    padding: 90px 130px;
+    position: relative;
+    z-index: -2;
+    border-radius: 15px;
+}
+
+.four-action .pre2 .txt {
+    width: 90%;
+    background-color: #ffff46;
+    margin: 0 auto;
+    padding: 90px 130px;
+    position: relative;
+    z-index: -2;
+    border-radius: 15px;
+}
+
+.four-action .pre3 .txt {
+    width: 90%;
+    background-color: #ffff46;
+    margin: 0 auto;
+    padding: 90px 130px;
+    position: relative;
+    z-index: -2;
+    border-radius: 15px;
+}
+
+.four-action .pre4 .txt {
+    width: 90%;
+    background-color: #ffff46;
+    margin: 0 auto;
+    padding: 90px 130px;
+    position: relative;
+    z-index: -2;
+    border-radius: 15px;
+}
+
+.act-txt {
+    width: 45%;
+}
+
+.act-txt2 {
+    width: 45%;
+    margin-left: auto;
+}
+
+.act-txt3 {
+    width: 45%;
+}
+
+.act-txt4 {
+    width: 45%;
+    margin-left: auto;
+}
+
+.act-txt-back {
+    width: 45%;
+    margin-left: auto;
+}
+
+.act-txt .reverse {
+    margin-left: auto;
+}
+
+.act-txts {
+    margin-top: 4em;
+}
+
+.act-num {
+    font-size: 120px;
+    text-align: center;
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    color: #6ebebe;
+}
+
+.act-num2 {
+    font-size: 120px;
+    text-align: center;
+    position: absolute;
+    top: -15%;
+    right:  20%;
+    color: #6ebebe;
+}
+
+.act-num3 {
+    font-size: 120px;
+    text-align: center;
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    color: #6ebebe;
+}
+
+.act-num4 {
+    font-size: 120px;
+    text-align: center;
+    position: absolute;
+    top: -15%;
+    right:  20%;
+    color: #6ebebe;
+}
+
+.act-sub-title {
+    font-size: 24px;
+    border-bottom: 2px solid;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #6ebebe;
+}
+
+.act-lead {
+    padding-top: 15px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+.act-img {
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-reverse {
+    left: 0;
+}
+
+.act-img img {
+    width: 100%;
+}
+
+
+
+/*お悩みバナーエリア*/
+
+.onayami-bnr {
+    text-align: center;
+    background: url(../img/onayami-bnr-bg.png) center center / 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.onayami-bnr-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px; 
+}
+
+.onayami-bnr-title span {
+    font-size: 54px;
+    color: #ffff46;
+}
+
+
+.onayami-bnr-btn {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.onayami-bnr-box {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.onayami-bnr-lead {
+    color: #fff;
+}
+
+.onayami-btn {
+    background-color: #ffff46;
+    color: #aa8c78;
+}
+
+
+
+
+/*ドクター紹介*/
+
+.doctor {
+    padding: 100px 100px 100px          ;
+}
+
+.doctor-box {
+    display: flex;
+}
+
+.doctor-txtbox {
+    width: 50%;
+}
+
+.doctor-title {
+    font-size: 46px;
+    color: #6ebebe;
+}
+
+.doctor-name {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.doctor-name span {
+    font-size: 16px;
+}
+
+.doctor-voice p {
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.doctor-voice span {
+    font-size: 18px;
+    color: #6ebebe;
+}
+
+.doctor-pic {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.doctor-pic img {
+    position: absolute;
+    bottom: -138px;
+}
+
+
+
+/*初診の流れ*/
+
+.flow {
+    background: url("../img/flow-bg.png") center center / 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0 100px 0;
+}
+
+.flow-title {
+    text-align: center;
+    color: #ffff46;
+    font-size: 46px;
+    margin-bottom: 100px;
+}
+
+
+.flow-box {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.no1 {
+    position: relative;
+}
+
+.no1::before {
+    content: "01";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    color: #fff;
+}
+
+.no2 {
+    position: relative;
+}
+
+.no2::before {
+    content: "02";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    color: #fff;
+}
+
+.no3 {
+    position: relative;
+}
+
+.no3::before {
+    content: "03";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    color: #fff;
+}
+
+.no4 {
+    position: relative;
+}
+
+.no4::before {
+    content: "04";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    color: #fff;
+}
+
+.no5 {
+    position: relative;
+}
+
+.no5::before {
+    content: "05";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    color: #fff;
+}
+
+
+.flow-img {
+    width: 48%;
+}
+
+.flow-img img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.flow-txtbox {
+    width: 48%;
+}
+
+.flow-sub-title {
+    font-size: 24px;
+    color: #ffff46;
+    padding: 20px 0;
+}
+
+.flow-sub-txt {
+    line-height: 2;
+    color: #fff;
+}
+
+
+
+/*治療費エリア*/
+
+.price {
+    background: url("../img/price-table-bg.png") center center / 100%;
+    border-radius: 15px;
+    padding: 50px 120px;
+}
+
+.price-title {
+    font-size: 34px;
+    color:#6ebebe;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.price table {
+    border: 1px solid #6ebebe;
+    margin-bottom: 15px;
+}
+
+.price table:not(.no-style) th {
+    padding: 1em;
+    vertical-align: middle;
+    background: #f0f8f8;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    width: 30%;
+}
+
+.price table:not(.no-style) tr:not(:last-of-type) > * {
+    border-bottom: solid 1px #e6e6e6;
+}
+
+
+.price table:not(.no-style) td {
+    padding: 1em;
+    vertical-align: middle;
+    line-height: 1.7;
+}
+
+
+
+
+/*フッターエリア*/
+
+footer {
+    text-align: center;
+    padding: 28.5rem 0 1.2rem;
+    background-color: #dadbdb;
+}
+
+
+
+
+
