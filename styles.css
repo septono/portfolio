@@ -199,7 +199,7 @@ header {
 }
 
 .top-mv img {
-    background: url("../img/top-mv.jpg");
+    background: url("img/top-mv.jpg");
     width: 90%;
     height: 900px;
     border-radius: 0 0 0 15%;
@@ -297,7 +297,7 @@ header {
     display: flex;
     justify-content: center;
 */
-    background: url("../img/onayami-bg.png") center center / 100%;
+    background: url("img/onayami-bg.png") center center / 100%;
     background-repeat: no-repeat;
 /*    padding: 50px 100px;*/
 }
@@ -311,7 +311,7 @@ header {
 
 /*
 .onayami::after {
-    background: url("../img/onayami-bg02.png");
+    background: url("img/onayami-bg02.png");
     content: '';
     width: 100%;
 }
@@ -357,7 +357,7 @@ header {
     content: '';
     width: 23px;
     height: 23px;
-    background: url("../img/check.png") no-repeat;
+    background: url("img/check.png") no-repeat;
     position: absolute;
     left: 0;
     margin-top: 10px;
@@ -478,7 +478,7 @@ header {
     content: "";
     width: calc(50vw);
     height: 350px;
-    background-image: url("../img/act02.jpg");
+    background-image: url("img/act02.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -493,7 +493,7 @@ header {
     content: "";
     width: calc(50vw);
     height: 350px;
-    background-image: url("../img/act03.jpg");
+    background-image: url("img/act03.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -507,7 +507,7 @@ header {
     content: "";
     width: calc(50vw);
     height: 350px;
-    background-image: url("../img/act04.jpg");
+    background-image: url("img/act04.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -662,7 +662,7 @@ header {
 
 .onayami-bnr {
     text-align: center;
-    background: url(../img/onayami-bnr-bg.png) center center / 100%;
+    background: url(img/onayami-bnr-bg.png) center center / 100%;
     background-repeat: no-repeat;
     padding: 100px 0;
 }
@@ -757,7 +757,7 @@ header {
 /*初診の流れ*/
 
 .flow {
-    background: url("../img/flow-bg.png") center center / 100%;
+    background: url("img/flow-bg.png") center center / 100%;
     background-repeat: no-repeat;
     padding: 100px 0 100px 0;
 }
@@ -878,7 +878,7 @@ header {
 /*治療費エリア*/
 
 .price {
-    background: url("../img/price-table-bg.png") center center / 100%;
+    background: url("img/price-table-bg.png") center center / 100%;
     border-radius: 15px;
     padding: 50px 120px;
 }
