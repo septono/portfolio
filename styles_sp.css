@@ -1,0 +1,570 @@
+@media screen and (max-width:768px) {
+
+    
+	.pc{ display: none; }
+	.sp{ display: block; }
+    
+    
+    nav {
+        height: 100%;
+        border-radius: 0;
+        width: 80vw;
+        padding: 13.33vw 0 13.33vw 13.33vw;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+	
+
+
+		
+	nav ul {
+    margin-top: 4rem;
+}
+
+
+	    .menu-btn {
+        width: 18.67vw;
+        height: 18.67vw;
+        border-radius: 0 0 0 8vw;
+    }
+
+    .menu-btn .inner {
+        width: 8vw;
+        height: 5.33vw;
+    }
+
+    .menu-btn.active .inner span:nth-of-type(1) {
+        top: 50%;
+        transform: translate(0,-50%) rotate(45deg);
+    }
+
+    .menu-btn.active .inner span:nth-of-type(3) {
+        bottom: 50%;
+        transform: translate(0,50%) rotate(-45deg);
+    }
+    
+    
+    .menu-btn {
+        width: 18.67vw;
+        height: 18.67vw;
+        border-radius: 10vw;
+        position: absolute;
+        top: 14px;
+    }
+    
+    .header-tel {
+        display: none;
+    }
+    
+    .header-yoyaku {
+        display: none;
+    }
+    
+    
+    .float-btn {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        margin-bottom: 10px;
+    }
+    
+    .float-btn li:nth-of-type(1) {
+    border-right: solid 1px #fff;
+    width: 48%;
+    border-radius: 35px;
+    color: #aa8c78;
+        background-color: #fff;
+        border: 1px solid;
+}
+    
+    .float-btn li {
+    color: white;
+    height: 16.3333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+}
+    
+    .float-btn li:nth-of-type(2) {
+    border-right: solid 1px #fff;
+    width: 48%;
+    border-radius: 35px;
+        background-color: #aa8c78;
+}
+    
+    
+    
+    
+	.top-sodan-box {
+        display: block;
+    }
+    
+    .mv-title-box {
+        transform: translateY(200px);
+    }
+    
+    .top-mv {
+        position: relative;
+        height: 400px;
+    }
+    
+    
+    .top-mv img {
+        background: url(../img/top-mv.jpg) center center / 100%;
+        width: 90%;
+        height: 550px;
+        border-radius: 0 0 0 15%;
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        z-index: 0;
+    }
+    
+    
+    .top-mv .mv-title1 {
+        background-color: #ffff46;
+        font-size: 1.8em;
+        position: absolute;
+        z-index: 1;
+        padding: 15px 30px;
+        border-radius: 0 50px 50px 0;
+        color: #6ebebe;
+        font-weight: 700;
+    }
+    
+    
+    .top-mv .mv-title2 {
+        background-color: #ffff46;
+        font-size: 1.8em;
+        position: absolute;
+        z-index: 1;
+        top: 90px;
+        padding: 15px 30px;
+        border-radius: 0 50px 50px 0;
+        color: #6ebebe;
+        font-weight: 700;
+    }
+    
+    
+    .top-sodan {
+        padding-top: 600px;
+        background-color: #6ebebe;
+        padding: 250px 0 70px;
+    }
+    
+    
+    .sodan-txt-box {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .sodan-pic {
+        width: 70%;
+    }
+    
+    
+    .sodan-btn-box {
+        display: block;
+    }
+    
+    .sodan-btn-box .btn {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .sodan-title {
+        font-size: 1.8em;
+        color: #ffff46;
+    }
+    
+    
+    
+/*    お悩みエリア*/
+    
+    .onayami {
+        background: url(../img/onayami-bg.png) center center / 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .onayami-flex {
+        display: block;
+        justify-content: space-evenly;
+        padding: 50px 28px;
+    }
+    
+    .onayami-box {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .onayami-pic {
+        width: 100%;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    
+    
+/*    解決策エリア*/
+    
+    
+    .four-action {
+        width: 100%;
+        margin: 10% auto;
+        text-align: center;
+    }
+    
+    .four-act-title {
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+    
+    .act-txt {
+        width: 100%;
+    }
+    
+    .act-txt2 {
+        width: 100%;
+    }
+    
+    .act-txt3 {
+        width: 100%;
+    }
+    
+    .act-txt4 {
+        width: 100%;
+    }
+    
+    .act-txts {
+        margin: 4em 0;
+    }
+    
+    
+    .four-action .pre .txt {
+        width: 90%;
+        background-color: #ffff46;
+        margin: 60px auto 0;
+        padding: 30px 30px;
+        position: relative;
+        z-index: -2;
+    }
+    .four-action .pre:before {
+        content: "";
+        width: calc(70vw);
+        height: 150px;
+        background-image: url(../img/act01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(90%);
+        right: -35px;
+    }
+    .act-num {
+        font-size: 120px;
+        text-align: center;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        color: #6ebebe;
+        transform: translateX(-50%);
+    }
+    
+    
+    .four-action .pre2 .txt {
+        width: 90%;
+        background-color: #ffff46;
+        margin: 150px auto 0;
+        padding: 30px 30px;
+        position: relative;
+        z-index: -2;
+    }
+    .four-action .pre2:before {
+        content: "";
+        width: calc(70vw);
+        height: 150px;
+        background-image: url("../img/act02.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(90%);
+        left: -35px;
+    }
+    .act-num2 {
+        font-size: 120px;
+        text-align: center;
+        position: absolute;
+        top: -20%;
+        left: 40%;
+        color: #6ebebe;
+        transform: translateX(-50%);
+    }
+    
+    .four-action .pre3 .txt {
+        width: 90%;
+        background-color: #ffff46;
+        margin: 150px auto 0;
+        padding: 30px 30px;
+        position: relative;
+        z-index: -2;
+    }
+    .four-action .pre3:before {
+        content: "";
+        width: calc(70vw);
+        height: 150px;
+        background-image: url("../img/act03.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(90%);
+        right: -35px;
+    }
+    .act-num3 {
+        font-size: 120px;
+        text-align: center;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        color: #6ebebe;
+        transform: translateX(-50%);
+    }
+    
+
+    .four-action .pre4 {
+        margin-bottom: 195px;
+    }
+    
+    
+    .four-action .pre4 .txt {
+        width: 90%;
+        background-color: #ffff46;
+        margin: 150px auto 0;
+        padding: 30px 30px;
+        position: relative;
+        z-index: -2;
+    }
+    .four-action .pre4:before {
+        content: "";
+        width: calc(70vw);
+        height: 150px;
+        background-image: url("../img/act04.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(90%);
+        left: -35px;
+    }
+    .act-num4 {
+        font-size: 120px;
+        text-align: center;
+        position: absolute;
+        top: -20%;
+        left: 40%;
+        color: #6ebebe;
+        transform: translateX(-50%);
+    }
+    
+    
+    
+/*    お悩みバナーエリア*/
+    
+    .onayami-bnr {
+        text-align: center;
+        background: url(../img/onayami-bnr-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        margin-top: 0px;
+    }
+    
+    .onayami-bnr-btn {
+    display: block;
+    margin-top: 50px;
+}
+    
+    .onayami-bnr-box {
+    width: 90%;
+    margin: 0 auto;
+}
+    
+    .onayami-btn {
+    background-color: #ffff46;
+    color: #aa8c78;
+    width: 100%;
+    margin: 20px 0;
+}
+    
+    .onayami-bnr-title {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+    
+    .onayami-bnr-title span {
+    font-size: 1.2em;
+    color: #ffff46;
+}
+    
+    
+    
+/*ドクター紹介*/
+    
+    .doctor {
+        padding: 80px 20px 450px;
+        position: relative;
+    }
+    
+    .doctor-box {
+    display: block;
+}
+    
+    .doctor-txtbox {
+    width: 100%;
+}
+    
+.doctor-pic {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(-25%);
+}
+    
+    .doctor-pic img {
+    position: absolute;
+    bottom: -26px;
+    height: 450px;
+    margin: auto;
+}
+    
+    
+/*    診療フローエリア*/
+    
+    
+    .flow {
+        background: url(../img/flow-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 100px 0;
+    }
+    
+    
+    .flow-box {
+        display: block;
+        justify-content: space-between;
+        border-top: 1px solid #fff;
+        padding: 50px 0;
+        position: relative;
+    }
+    
+    .flow-img {
+    width: 80%;
+    margin: auto;
+}
+    
+    .flow-txtbox {
+    width: 80%;
+    margin: auto;
+}
+    
+    .no1::before {
+    content: "01";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    color: #fff;
+}
+    
+    .no2::before {
+    content: "02";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    color: #fff;
+}
+    
+    .no3::before {
+    content: "03";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    color: #fff;
+}
+    
+    .no4::before {
+    content: "04";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    color: #fff;
+}
+    
+    .no5::before {
+    content: "05 ";
+    width: 40px;
+    font-size: 42px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    color: #fff;
+}
+    
+    
+    .price {
+    background: url(../img/price-table-bg.png);
+    background-size: cover;
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin: 20px;
+}
+    
+    .price-title {
+    font-size: 34px;
+    color: #6ebebe;
+    text-align: center;
+    padding-bottom: 25px;
+}
+    
+    .price table:not(.no-style) th {
+    padding: 1em;
+    vertical-align: middle;
+    background: #f0f8f8;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    width: 50%;
+}
+    
+    
+    
+    
+    
+}
