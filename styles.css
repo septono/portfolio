@@ -464,7 +464,7 @@ header {
     content: "";
     width: calc(50vw);
     height: 350px;
-    background-image: url(../img/act01.jpg);
+    background-image: url(img/act01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
