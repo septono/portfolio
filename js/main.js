@@ -63,4 +63,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  
+  $(function() {
+    $('.header__li').on('click', function() {
+      $(".pulldown").slideToggle();
+  });
+
+    $('.top__title').on('click', function() {
+      
+      $('.top__sub').toggle("うんち");
+  });
+  });
