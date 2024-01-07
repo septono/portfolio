@@ -1126,3 +1126,97 @@ a {
 }
 
 
+
+
+
+.test {
+  // width: 50%;
+  // margin: 0 auto;
+  // text-align: center;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.box-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  border: 3px solid yellow;
+  color: #fff;
+  font-weight: black;
+  flex: 0 1 auto;
+  
+  &-red {
+    background-color: red;
+  }
+  &-blue {
+    background-color: blue;
+    flex: 1 1 auto;
+  }
+  &-green {
+    background-color: green;
+  }
+}
+
+
+.card {
+  &_list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+
+  &_item {
+    width: calc((100% - 30px) / 4);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.bar {
+  width: 50px;
+  border: 1px solid;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  ul {
+    padding: 30px 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '⇧';
+      width: 50px;
+      height: 30px;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    &::after {
+      position: absolute;
+      content: '⇩';
+      width: 50px;
+      height: 30px;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
